@@ -15,5 +15,11 @@ public class Main {
       System.out.println(obj);
     }
 
+    // for each
+    // You can use for each in all collections
+    for(String key : list) {
+      System.out.println(key);
+    }
+
   }
 }
