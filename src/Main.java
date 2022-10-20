@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Iterator;
 
 public class Main {
@@ -50,5 +51,11 @@ public class Main {
     // toArray():Object[]
     // <T>toArray(T[]a):T[]
     // }
+
+    Collection<String> bestApps = new ArrayList<>();
+    bestApps.add("Master Coding");
+    bestApps.add("Master Coding PRO");
+
+    System.out.println(bestApps.toString());
   }
 }
