@@ -7,12 +7,14 @@ public class Main {
     list.add("B");
     list.add("C");
 
+    System.out.println("--------------------------------- ARRAYLIST ---------------------------------------");
     // Using iterators
     Iterator<String> iterator = list.iterator();
     while(iterator.hasNext()) {
       String obj = iterator.next();
       System.out.println(obj);
     }
+    System.out.println("------------------------------------------------------------------------");
 
     // for each
     // You can use for each in all collections
@@ -55,6 +57,7 @@ public class Main {
     bestApps.add("Master Coding PRO");
 
     System.out.println(bestApps.toString());
+    System.out.println("------------------------------ HASHSET ------------------------------------------");
 
     // Sets are used to store unordered sets of elements and does not allow to store duplicates and just one null
 
@@ -76,6 +79,7 @@ public class Main {
       String obj = iterator2.next();
       System.out.println(obj);
     }
+    System.out.println("----------------------------- LINKEDHASHSET -------------------------------------------");
 
     // LinkedHashSet is an ordered version of the HashSet that maintains a doubly-linked List across all elements.
     // When the iteration order is needed to be maintained this calss is used.
@@ -90,11 +94,33 @@ public class Main {
     s2.add("E");
 
     s2.remove("D");
+
     // Iterator over the collection elements
     Iterator<String> iterator3 = s2.iterator();
     while(iterator3.hasNext()) {
       String obj = iterator3.next();
       System.out.println(obj);
     }
+    System.out.println("------------------------------ TREESET ------------------------------------------");
+
+    // TreeSet implements the Set interface that uses a tree for storage
+    // It uses binary search tree to store its elements in sorted order.
+    // like HashSet, TreeSet also contains unique elements.
+    // However, the access and retrieval time of TreeSet is quite fast.
+    // The elements in TreeSet stored in ascending order.
+
+    s3.add("A");
+    s3.add("D");
+    s3.add("C");
+    s3.add("B");
+    s3.add("B");
+
+    // Iterator over the collection elements
+    Iterator<String> iterator4 = s3.iterator();
+    while(iterator4.hasNext()) {
+      String obj = iterator4.next();
+      System.out.println(obj);
+    }
+    System.out.println("------------------------------------------------------------------------");
   }
 }
