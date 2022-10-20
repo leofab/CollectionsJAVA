@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
+import java.util.*;
 
 public class Main {
   public static void main(String[] args) throws Exception {
@@ -57,5 +55,11 @@ public class Main {
     bestApps.add("Master Coding PRO");
 
     System.out.println(bestApps.toString());
+
+    // Sets are used to store unordered sets of elements and does not allow to store duplicates and just one null
+
+    Set<String> s1 = new HashSet<>();
+    Set<String> s2 = new LinkedHashSet<>();
+    Set<String> s3 = new TreeSet<>();
   }
 }
