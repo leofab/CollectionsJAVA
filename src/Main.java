@@ -61,5 +61,40 @@ public class Main {
     Set<String> s1 = new HashSet<>();
     Set<String> s2 = new LinkedHashSet<>();
     Set<String> s3 = new TreeSet<>();
+
+    // HashSet uses hash table for storage that places elements into specific positions based upon integers called hash
+    // codes.
+
+    s1.add("element 1");
+    s1.add("element 2");
+    s1.add("element 2");
+    s1.add("element 3");
+
+    // Iterator over the collection elements
+    Iterator<String> iterator2 = s1.iterator();
+    while(iterator2.hasNext()) {
+      String obj = iterator2.next();
+      System.out.println(obj);
+    }
+
+    // LinkedHashSet is an ordered version of the HashSet that maintains a doubly-linked List across all elements.
+    // When the iteration order is needed to be maintained this calss is used.
+    // When iterating through a HashSet the order is unpredictable,
+    // while a LinkedHashSet is lets us itarate through the elements in the order in which they were inserted.
+
+    s2.add("A");
+    s2.add("B");
+    s2.add("C");
+    s2.add("C");
+    s2.add("D");
+    s2.add("E");
+
+    s2.remove("D");
+    // Iterator over the collection elements
+    Iterator<String> iterator3 = s2.iterator();
+    while(iterator3.hasNext()) {
+      String obj = iterator3.next();
+      System.out.println(obj);
+    }
   }
 }
